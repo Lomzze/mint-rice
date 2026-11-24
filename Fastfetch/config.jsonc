@@ -1,0 +1,135 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "type": "kitty",
+    "source": "~/Downloads/CatEep-removebg-preview.png",
+    "width": 20,
+    "padding": {
+      "top": 1,
+      "left": 1,
+      "right": 2
+    }
+  },
+
+  "display": {
+    "separator": " │ ",
+    "key": {
+      "width": 4,
+      "type": "string"
+    },
+    "color": {
+      "keys": "bright_white",
+      "title": "bright_white",
+      "output": "white",
+      "separator": "light_black"
+    },
+    "bar": {
+      "char": {
+        "elapsed": "▰",
+        "total": "▱"
+      },
+      "border": {
+        "left": "⟦",
+        "right": "⟧"
+      },
+      "color": {
+        "elapsed": "bright_white",
+        "total": "light_black",
+        "border": "light_black"
+      },
+      "width": 10
+    },
+    "temp": {
+      "unit": "C",
+      "ndigits": 0
+    },
+    "percent": {
+      "type": 2
+    },
+    "size": {
+      "ndigits": 1
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "╭────────────────────────────────────────────────╮",
+      "outputColor": "light_black"
+    },
+    {
+      "type": "title",
+      "format": " \u001b[1;37m✦ {user-name}\u001b[0;90m@\u001b[1;37m{host-name}\u001b[0;90m ── \u001b[38;5;244m>_<\u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────────────┤",
+      "outputColor": "light_black"
+    },
+    {
+      "type": "os",
+      "key": "   ",
+      "format": "{name} {version}"
+    },
+    {
+      "type": "kernel",
+      "key": " ",
+      "format": "{release}"
+    },
+    {
+      "type": "packages",
+      "key": "   ",
+      "format": "{all} (dpkg: {dpkg}, flatpak: {flatpak})"
+    },
+    {
+      "type": "uptime",
+      "key": "   "
+    },
+    {
+      "type": "de",
+      "key": "   ",
+      "format": "{pretty-name} ({protocol-name})"
+    },
+    {
+      "type": "shell",
+      "key": " ",
+      "format": "{pretty-name} • {terminal}"
+    },
+    {
+      "type": "cpu",
+      "key": " ",
+      "temp": true,
+      "format": "{name} [{temp}]"
+    },
+    {
+      "type": "gpu",
+      "key": "   ",
+      "temp": true,
+      "format": "{name} [{temp}]"
+    },
+    {
+      "type": "memory",
+      "key": " ",
+      "format": "{percentage-bar} {used}/{total}"
+    },
+    {
+      "type": "disk",
+      "key": "   ",
+      "folders": "/",
+      "format": "{size-percentage-bar} {size-used}/{size-total}"
+    },
+    {
+      "type": "custom",
+      "format": "├────────────────────────────────────────────────┤",
+      "outputColor": "light_black"
+    },
+    {
+      "type": "custom",
+      "format": " \u001b[38;5;232m██\u001b[38;5;236m██\u001b[38;5;240m██\u001b[38;5;244m██\u001b[38;5;248m██\u001b[38;5;252m██\u001b[38;5;255m██  \u001b[38;5;244mMONO // 16-BIT\u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "╰────────────────────────────────────────────────╯",
+      "outputColor": "light_black"
+    }
+  ]
+}
